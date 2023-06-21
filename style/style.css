@@ -177,7 +177,6 @@ a {
   padding: 20px 30px;
   width: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  margin: 0 20px;
 }
 
 .card-footer {
@@ -189,13 +188,13 @@ a {
 
 .tehnical-skills-list {
 }
+.position-responsibility {
+  padding-left: 5px;
+}
 .company-info {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 
 .company-name-link {
@@ -206,13 +205,11 @@ a {
   height: 30px;
 }
 
-.position-responsibility {
-}
-
 .skills-container {
   display: flex;
   justify-content: flex-start;
   gap: 40px;
+  overflow-x: auto;
 }
 
 .skill-wrap {
@@ -281,6 +278,24 @@ a {
     margin-left: 20px;
   }
 
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .company-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  .position-responsibility {
+    padding-left: 40px;
+  }
   .nav-icon {
     width: 25px;
     color: #1c2938;
@@ -308,14 +323,5 @@ a {
   }
   .section-padding {
     padding: 0 200px;
-  }
-  .card {
-    margin: 0;
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  .section-container {
-    padding: 0 12%;
   }
 }
