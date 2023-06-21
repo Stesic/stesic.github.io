@@ -5,14 +5,959 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <title>Ivan Stesic - Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/mobile-nav.css" />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/accourdion.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/v4/get-started/get-started-cdn/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
-    <main class="main">
-      <img
-        src="https://static6.depositphotos.com/1021974/580/i/600/depositphotos_5801106-stock-photo-website-under-construction.jpg"
-        alt="under-construction"
-      />
-    </main>
+    <div class="container">
+      <nav class="navigation">
+        <ul>
+          <div class="avatar-container">
+            <a href="#">
+              <img
+                class="avatar-img"
+                src="https://avatars.githubusercontent.com/u/28142781?v=4"
+                alt="profile-avatar"
+              />
+            </a>
+            <div class="divider"></div>
+          </div>
+
+          <li>
+            <a href="#about">
+              <i class="nav-icon fa fa-user" aria-hidden="true"></i>
+              About</a
+            >
+          </li>
+          <li>
+            <a href="#experience">
+              <i class="nav-icon fa fa-briefcase" aria-hidden="true"></i>
+              Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects">
+              <i class="nav-icon fa fa-cogs" aria-hidden="true"></i>
+              Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills">
+              <i class="nav-icon fa fa-wrench" aria-hidden="true"></i>
+              Skills</a
+            >
+          </li>
+          <li>
+            <a href="#education">
+              <i class="nav-icon fa fa-graduation-cap" aria-hidden="true"></i>
+              Edication</a
+            >
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="nav-icon fa fa-envelope" aria-hidden="true"></i>
+              Contact</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="./assets/files/ivan-stesic-cv.pdf">
+              <i class="nav-icon fa fa-file" aria-hidden="true"></i>
+              Resume
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-navigation">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Edication</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a target="_blank" href="./assets/files/ivan-stesic-cv.pdf"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <!-- INTRO SECTION -->
+        <section class="intro-section section-padding">
+          <h1>Hi, I'm Ivan Stesic</h1>
+          <h4>A Frontend Developer</h4>
+          <p>
+            Dedicated, skilled and passionate developer with expertise in
+            creating engaging and user-friendly web interfaces with more than 4
+            years of experience in IT industry.
+          </p>
+          <div class="social-network-wrap">
+            <a
+              class="social-network-button"
+              target="_blank"
+              href="https://github.com/stesic"
+            >
+              <img
+                class="social-network-img"
+                alt="github"
+                src="./assets/images/github.svg"
+              />
+            </a>
+            <a
+              class="social-network-button"
+              target="_blank"
+              href="https://www.linkedin.com/in/ivan-stesic/"
+            >
+              <img
+                class="social-network-img"
+                alt="linkedin"
+                src="./assets/images/linkedin.jpg"
+              />
+            </a>
+          </div>
+          <div class="intro-links">
+            <a href="#about"> Read More</a>
+            <a href="#contact"> Contact Me</a>
+          </div>
+        </section>
+
+        <!--- ***************************************   --->
+
+        <div id="about" class="section-headline">About</div>
+        <section>
+          <div class="section-container">
+            <div class="section-content">
+              <p>
+                I am a dedicated and highly motivated developer with over 4
+                years of experience in the IT industry. My focus is on writing
+                highly maintainable and reliable code. I have a strong
+                problem-solving ability and thrive on new challenges. With
+                excellent communication skills and a strong sense of teamwork, I
+                am able to collaborate effectively with others to bring projects
+                to life.
+              </p>
+              <p>
+                I have successfully translated design concepts into fully
+                functional websites and web applications. I approach my work
+                with a strong work ethic and strive for continuous improvement.
+                My goal is to acquire new knowledge and experiences while
+                advancing my career, constantly learning new skills (currently
+                Node.js) and staying updated with the latest practices in the
+                field of programming and IT. I have been engaged in web
+                application development for various industries, including
+                e-commerce, insurance, human resources, gambling, and more. In
+                addition to web application development, also been involved in
+                process automation using RPA (Robotic Process Automation) tools.
+              </p>
+
+              <h4>Tehnical Skills</h4>
+              <ul class="tehnical-skills-list line-height">
+                <li>
+                  <b>JavaScript (es6+), React, Next.js, TypeScript</b>, jQuery,
+                  React Native
+                </li>
+                <li>
+                  State Management: <b>React Context</b>, Redux/Redux-toolkit,
+                  zustand, recoil
+                </li>
+                <li>Forms: Formik, React-hook-form</li>
+
+                <li><b>REST API </b>, WEBSOCKET</li>
+                <li><b> HTML5, CSS3</b>, SASS,XML,</li>
+                <li>
+                  <b> styled-components, Material UI, Fluent UI </b>, Chakra UI,
+                  Tailwind CSS, Materialize, Bootstrap
+                </li>
+                <li><b>VSC, GitHub, GitLab, Bitbucket,Jira </b>, Basecamp</li>
+                <li>RPA tools - SAP Intelligent RPA (Contextor), UiPath</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- EXPERIENCE -->
+        <div class="section-headline" id="experience">Experience</div>
+
+        <section>
+          <div class="section-container">
+            <div class="section-content card">
+              <header class="card-header">
+                <div class="company-info">
+                  <div class="flex-row">
+                    <img
+                      class="company-img"
+                      src="./assets/images/symphony.png"
+                      alt="symphony"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://symphony.is/"
+                      class="company-name-link"
+                      >Symphony digital BG</a
+                    >
+                  </div>
+
+                  <span class="company-position">Software Engineer</span>
+                </div>
+              </header>
+              <ul class="card-content position-responsibility line-height">
+                <li>
+                  Implementing well-designed, testable, and efficient
+                  React.js/Node.js with Typescript code
+                </li>
+                <li>Analyzing and estimation of client requirements</li>
+                <li>
+                  Regular and up-to-date reporting to the service delivery
+                  manager and/or client, in accordance with a predetermined way
+                  of working
+                </li>
+                <li>
+                  Daily communication with the team and client's technician
+                  responsible staff
+                </li>
+                <li>Agile environment for sprint-based development</li>
+                <li>Participating in code reviews of own and other’s work</li>
+              </ul>
+              <footer class="card-footer">Jun 2022 – May 2023</footer>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="section-content card">
+              <header class="card-header">
+                <div class="company-info">
+                  <div class="flex-row">
+                    <img
+                      class="company-img"
+                      src="./assets/images/greco.jpg"
+                      alt="greco"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://site.greco.services/rs/"
+                      class="company-name-link"
+                      >GrECo International</a
+                    >
+                  </div>
+
+                  <span class="company-position">Frontend Developer</span>
+                </div>
+              </header>
+              <ul class="card-content position-responsibility line-height">
+                <li>
+                  Responsible for implementation of user interfaces (UIs) and UI
+                  components using React on internal company projects
+                </li>
+                <li>
+                  Collaborating with designers, product managers, and other team
+                  members to understand requirements, provide technical
+                  insights, and deliver high-quality solutions
+                </li>
+                <li>Agile environment for sprint-based development</li>
+                <li>Participate in code reviews of own and other’s work</li>
+              </ul>
+              <footer class="card-footer">March 2021 – Jun 2022</footer>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="section-content card">
+              <header class="card-header">
+                <div class="company-info">
+                  <div class="flex-row">
+                    <img
+                      class="company-img"
+                      src="./assets/images/thinkbig.jpg"
+                      alt="thinkbig"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://thinkbig.dev/"
+                      class="company-name-link"
+                      >Think Big development</a
+                    >
+                  </div>
+
+                  <span class="company-position">Software Engineer</span>
+                </div>
+              </header>
+              <ul class="card-content position-responsibility line-height">
+                <li>
+                  Working on outsourcing project as part of clients team using
+                  React.js with Material UI framework
+                </li>
+                <li>Daily communication with team members</li>
+                <li>Collaborating with Designers and Backend Developers</li>
+              </ul>
+              <footer class="card-footer">July 2020 – March 2021</footer>
+            </div>
+          </div>
+          <div class="section-container">
+            <div class="section-content card">
+              <header class="card-header">
+                <div class="company-info">
+                  <div class="flex-row">
+                    <img
+                      class="company-img"
+                      src="./assets/images/saga.png"
+                      alt="saga"
+                    />
+                    <a
+                      target="_blank"
+                      href="https://saga.rs/"
+                      class="company-name-link"
+                      >Saga a Noventiq Company</a
+                    >
+                  </div>
+
+                  <span class="company-position">Software Engineer</span>
+                </div>
+              </header>
+              <ul class="card-content position-responsibility line-height">
+                <li>
+                  Designing, developing, and implementing RPA solutions using
+                  appropriate RPA tools and technologies.
+                </li>
+                <li>
+                  Analyzing business processes, identifying automation
+                  opportunities, and creating efficient and reliable automation
+                  workflows
+                </li>
+                <li>
+                  Maintenance and Support: Providing ongoing support and
+                  maintenance for deployed RPA solutions. Monitoring and
+                  troubleshooting bots, addressing any issues or errors, and
+                  ensuring smooth operation of automated processes
+                </li>
+                <li>
+                  Collaborating with business stakeholders, IT teams, and other
+                  developers to understand business requirements and align RPA
+                  solutions with organizational goals.
+                </li>
+                <li>
+                  Communicating effectively with both technical and
+                  non-technical team members to ensure successful implementation
+                  and adoption of RPA solutions
+                </li>
+              </ul>
+              <footer class="card-footer">March 2019 – July 2020</footer>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+
+        <div id="projects" class="section-headline">Projects</div>
+        <section>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Web marketplace for electric vehicles
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <a target="_blank" href="https://evercars.com/">
+                  <div class="flex-row">
+                    Visit app<i class="fa-solid fa-up-right-from-square"></i>
+                  </div>
+                </a>
+                <p>
+                  Online web portal / marketplace for electric vehicles. The app
+                  is responsive and has two versions, React and Next.js. Main
+                  project features are Auth pages, blog posts integrated with
+                  Sanity, vehicle listings with proper filters, vehicle details,
+                  and an integrated payment checkout process.
+                </p>
+                <p>
+                  <b
+                    >Stack:React.js/Next.js/TypeScript, Sanity,
+                    styled-components, React Context, react-hook-form, Plaid,
+                    etc.
+                  </b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Realestate platform
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <a
+                  target="_blank"
+                  href="https://aventura.keyes.com/holp?key=ZKGmoJ9hZWqgq6ibZWplnKuqnw=="
+                >
+                  <div class="flex-row">
+                    Visit app<i class="fa-solid fa-up-right-from-square"></i>
+                  </div>
+                </a>
+                <p>
+                  The platform is a consumer destination, branded completely to
+                  the brokerage and Agent. It anchors consumers in a single
+                  place, allowing brokerages to deliver a seamlessly connected
+                  experience throughout the entire home ownership lifecycle:
+                  from living in a home and understanding its value, searching
+                  for their next home, streamlining the complexities of a
+                  current transaction, moving into a new home and back to living
+                  in their current home.
+                </p>
+                <p>
+                  <b>
+                    Stack: React/Typescript, recoil, talkjs,
+                    styled-components.</b
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Visitor registration
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <!-- <a
+                  target="_blank"
+                  href="https://aventura.keyes.com/holp?key=ZKGmoJ9hZWqgq6ibZWplnKuqnw=="
+                >
+                  <div class="flex-row">
+                    Visit app<i class="fa-solid fa-up-right-from-square"></i>
+                  </div>
+                </a> -->
+                <p>
+                  An internal ios application that allows employees and visitors
+                  to register upon arrival in the hub. In just a few clicks
+                  employee is signed in to his hub whereas the visitor can
+                  select his host and write down his name.
+                </p>
+                <p>
+                  There is also a health check feature - a question about the
+                  user’s general health condition that serves to prevent a
+                  possible outbreak of the disease in the hub. The app is
+                  written in React Native for ios tablet devices.
+                </p>
+                <p>
+                  <b
+                    >Stack: React Native, axios expo, styled-components,
+                    react-native-toast-notifications, lottie-react-native</b
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Visitor registration dashboard
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <!-- <a
+                  target="_blank"
+                  href="https://aventura.keyes.com/holp?key=ZKGmoJ9hZWqgq6ibZWplnKuqnw=="
+                >
+                  <div class="flex-row">
+                    Visit app<i class="fa-solid fa-up-right-from-square"></i>
+                  </div>
+                </a> -->
+                <p>
+                  A dashboard app that provides admins with data about hub
+                  entries of employees and visitors. It includes a list of daily
+                  visits or a list of visits in the time span between chosen
+                  dates. Login is implemented as “login with google”
+                  functionality. Admin can filter lists by date, hub, and search
+                  input field. Also, lists can be exported as cvs files.
+                </p>
+                <p>
+                  The statistic section provides data such as the total
+                  employee’s number worked in hub, the total employee’s number
+                  worked remotely, the hub’s most visited day, the average
+                  number of days worked from the Bg hub, etc. The app is written
+                  in React.
+                </p>
+                <p>
+                  <b>
+                    Stack:React / Typescript, zustand, Chakra UI, react-query,
+                    react-table, react-qoogle login, axios,
+                    react-native-toast-notifications, lottie-react</b
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Crypto betting platform
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <a target="_blank" href="https://www.esportsbet.io/">
+                  <div class="flex-row">
+                    Visit app<i class="fa-solid fa-up-right-from-square"></i>
+                  </div>
+                </a>
+                <p>
+                  EsportsBet.io is a crypto-friendly platform that caters to the
+                  world of esports entertainment. It provides users with the
+                  opportunity to engage in esports betting using
+                  cryptocurrencies as a form of payment and withdrawal. By
+                  incorporating cryptocurrencies into their platform,
+                  EsportsBet.io offers users the advantage of secure and
+                  anonymous transactions, fast deposits and withdrawals, and
+                  potentially lower transaction fees compared to traditional
+                  payment methods.
+                </p>
+                <p>
+                  EsportsBet.io likely provides a variety of esports betting
+                  options, allowing users to place bets on matches and
+                  tournaments across different popular esports titles. This
+                  could include games such as League of Legends, Dota 2,
+                  CS:GO...
+                </p>
+                <p>
+                  <b>Stack:Next.js, styled-component, React Context </b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Document Management System
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <p>
+                  In-house project with a lot of functionalities similar to
+                  Microsoft Outlook.
+                </p>
+
+                <p>
+                  <b
+                    >Stack: React.js/TypeScript, React Context , React Tiny ...
+                  </b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Business Fleet Management
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <p>
+                  In-house project for monitoring vehicle insurance and
+                  policies.
+                </p>
+
+                <p>
+                  <b>Stack: React.js/TypeScript, Redux-Toolkit ... </b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Admin Panel
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <p>
+                  Admin B2B app for Gaming platform written in React.js.
+                  React-material.fusetheme is used for UI. Data is provided
+                  through a WebSocket connection. The state management is
+                  handled with Redux and Hooks, localization with i18next.
+                  React-hook-form and Yup.js takes care of project forms and
+                  validation. Other dependencies:
+                  react-use,react-table,lodash,moment, suneditor-react,
+                  react-html-parser...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              Project for HR company
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <p>
+                  HR Application is project divided in two parts. First part is
+                  application for candidates, and the second is admin app for
+                  recruiters. Both parts are written in React.js/TypeScript with
+                  Material-UI framework. State data is managed with Context API
+                  and Hooks. Yup.js library along with react-hook-form are used
+                  for form validation and submission. Version control with
+                  GitLab. Other dependencies: axios,lodash,day.js, js-base64...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="section-container accourdion-container">
+            <div class="accordion-label">
+              RPA - Cash management
+              <div class="accordion-icon-wrap">
+                <i
+                  class="accourdion-icon fa fa-angle-down"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+            <div class="accourdion-panel">
+              <div class="section-content card">
+                <p>
+                  Unattended, fully automated processing of deposits from the
+                  Automatic Transfer Service (ATS) devices along with funds
+                  distribution to the related bank branches. Process encompasses
+                  denomination structure submission as well as daily reports
+                  generation. Process is automated on two bank platform, with
+                  two RPA tools (UiPath and SAP Intelligent RPA). This process
+                  is build on two bank platforms, with to RPA tools (UiPath, SAP
+                  Intelligent RPA)
+                </p>
+                <p>
+                  <b>
+                    Stack: SAP Intelligent RPA ,UiPath , JS(ES5), Node.js, C#,
+                    XML
+                  </b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+
+        <div id="skills" class="section-headline">Skills</div>
+        <section>
+          <div class="section-container flex-col">
+            <div class="section-content card">
+              <p>Languages and frameworks</p>
+
+              <div class="skills-container">
+                <div class="skill-wrap">
+                  <img src="./assets/images/javascript.png" alt="javascript" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/react.png" alt="react" />
+                  <span>React.js</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/next.png" alt="next" />
+                  <span>Next.js</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/typescript.png" alt="typescript" />
+                  <span>TypeScript</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/jquery.png" alt="jquery" />
+                  <span>jQuery</span>
+                </div>
+                <div class="skill-wrap">
+                  <img
+                    src="./assets/images/reactNative.jpg"
+                    alt="react-native"
+                  />
+                  <span>React Native</span>
+                </div>
+              </div>
+            </div>
+            <div class="section-content card">
+              <p>State Management, data fetching and connections</p>
+
+              <div class="skills-container">
+                <div class="skill-wrap">
+                  <img src="./assets/images/react.png" alt="react-context" />
+                  <span>React Context</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/redux.png" alt="redux-toolkit" />
+                  <span>Redux/Toolkit</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/zustand.png" alt="zustand" />
+                  <span>zustand</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/recoil.png" alt="recoil" />
+                  <span>Recoil</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/axios.png" alt="axios" />
+                  <span>Axios</span>
+                </div>
+                <div class="skill-wrap">
+                  <img
+                    src="./assets/images/react-query.png"
+                    alt="react-query"
+                  />
+                  <span>react-query</span>
+                </div>
+
+                <div class="skills-container">
+                  <div class="skill-wrap">
+                    <img src="./assets/images/rest.jpg" alt="rest-api" />
+                    <span>REST API</span>
+                  </div>
+                  <div class="skill-wrap">
+                    <img
+                      src="./assets/images/websockets.webp"
+                      alt="websockets"
+                    />
+                    <span>WEBSOCKETS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-content card">
+              <p>Markup Languages, Styling and UI Frameworks</p>
+
+              <div class="skills-container">
+                <div class="skill-wrap">
+                  <img src="./assets/images/html.webp" alt="html5" />
+                  <span>HTML5</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/xml.png" alt="xml" />
+                  <span>XML</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/css.webp" alt="css3" />
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/sass.png" alt="sass" />
+                  <span>SASS</span>
+                </div>
+                <div class="skill-wrap">
+                  <img
+                    src="./assets/images/styled-components.jpg"
+                    alt="styled-components"
+                  />
+                  <span>styled-components</span>
+                </div>
+                <div class="skill-wrap">
+                  <img
+                    src="./assets/images/material-ui.png"
+                    alt="material-ui"
+                  />
+                  <span>Material Ui</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/fluent.png" alt="fluent" />
+                  <span>Fluent UI</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/chakra.png" alt="chakra" />
+                  <span>Chakra UI</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/tailwind.png" alt="tailwind" />
+                  <span>Tailwind CSS</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/material-ui.png" alt="tailwind" />
+                  <span>Materialize</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/bootstrap.jpeg" alt="bootstrap" />
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-content card">
+              <p>Version control and project management tools</p>
+
+              <div class="skills-container">
+                <div class="skill-wrap">
+                  <img src="./assets/images/vsc.png" alt="vsc" />
+                  <span>VSC</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/github-skill.png" alt="github" />
+                  <span>GitHub</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/gitlab.png" alt="gitlab" />
+                  <span>GitLab</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/bitbucket.jpg" alt="bitbucket" />
+                  <span>Bitbucket</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/jira.png" alt="jira" />
+                  <span>Jira</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/basecamp.svg" alt="basecamp" />
+                  <span>Basecamp</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-content card">
+              <p>Robotic process automation tools</p>
+
+              <div class="skills-container">
+                <div class="skill-wrap">
+                  <img src="./assets/images/uipath.png" alt="uipath" />
+                  <span>UiPath</span>
+                </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/contextor.png" alt="contextor" />
+                  <span>Contextor</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+
+        <div id="education" class="section-headline">Education</div>
+        <section>
+          <div class="section-container">
+            <div class="section-content card">
+              <p>
+                Belgrade Institute of Technology - Front-end bootcamp focusing
+                on JavaScript, 400 hours of lectures and practical work.
+              </p>
+              <p>
+                Faculty of Agriculture - Financial Management for Agribusiness –
+                Master degree
+              </p>
+              <p>Faculty of Agriculture - Agroeconomy – Bachelor degree</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <div id="contact" class="section-headline">Contact</div>
+        <section>
+          <div class="section-container">
+            <div class="flex-col">
+              <div class="flex-row">
+                <div class="contact-icon-wrap">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <span>+38169 55 10 991</span>
+              </div>
+
+              <div class="flex-row">
+                <div class="contact-icon-wrap">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <a
+                  target="_blank"
+                  class="contact-link"
+                  href="mailto: ivan.stesic@gmail.com"
+                  >ivan.stesic@gmail.com</a
+                >
+              </div>
+              <div class="flex-row">
+                <div class="contact-icon-wrap">
+                  <i class="fab fa-github"></i>
+                </div>
+                <a
+                  target="_blank"
+                  class="contact-link"
+                  href="https://github.com/stesic"
+                  >github.com/stesic</a
+                >
+              </div>
+              <div class="flex-row">
+                <div class="contact-icon-wrap">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <a
+                  target="_blank"
+                  class="contact-link"
+                  href="https://www.linkedin.com/in/ivan-stesic"
+                  >linkedin.com/in/ivan-stesic</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
+  <script src="./script.js"></script>
 </html>
