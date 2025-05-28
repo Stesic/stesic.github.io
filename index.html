@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/accourdion.css" />
+    <link rel="stylesheet" href="./style/caurosel.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -179,7 +180,7 @@
                   React Native, Node.js, Express.js
                 </li>
                 <li>
-                  State Management: <b>React Context, react-query</b>, Redux/Redux-toolkit,
+                  State Management: <b>Jotai, React Context, react-query</b>, Redux/Redux-toolkit,
                   zustand, recoil
                 </li>
                 <li>Forms: Formik, React-hook-form</li>
@@ -399,6 +400,91 @@
                 </div>
               </div>
             </div>
+
+               <!-- WAM //// -->
+            <div class="section-container accourdion-container">
+              <div class="accordion-label">
+                <div class="flex-row">
+                  Asset Management
+  
+                  <i class="fa-solid fa-up-right-from-square fa-xs"></i>
+                </div>
+                <div class="accordion-icon-wrap">
+                  <i
+                    class="accourdion-icon fa fa-angle-down"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+              <div class="accourdion-panel">
+                <div class="section-content card">
+                  <a id="myBtn">
+                    <div class="flex-row">
+                      Visit app<i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                  </a>
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (1).jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (2).jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (3).jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (4).jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (5).jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (6).jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (7).jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="./assets/images/wam (8).jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+    <span class="close">&times;</span>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span> 
+      <span class="dot" onclick="currentSlide(7)"></span> 
+      <span class="dot" onclick="currentSlide(8)"></span> 
+    </div>
+  </div>
+
+</div>
+<p>Asset Management is Application that provides users with a complex table,  editable rows and multiple filter options. Users can perform various actions on table items, both individually and in bulk, as well as view the action history, item details, and more.
+</p>
+                  <p>
+                    <b
+                      >Stack:React.js/TypeScript, Material Ui, react-query, react-table,
+                      styled-components
+                      etc.
+                    </b>
+                  </p>
+                </div>
+              </div>
+            </div>
+              <!-- //// -->
           <div class="section-container accourdion-container">
             <div class="accordion-label">
               <div class="flex-row">
@@ -842,6 +928,10 @@
 
               <div class="skills-container">
                 <div class="skill-wrap">
+                  <img src="./assets/images/jotai.png" alt="jotai" />
+                  <span>Jotai</span>
+                </div>
+                <div class="skill-wrap">
                   <img src="./assets/images/react.png" alt="react-context" />
                   <span>React Context</span>
                 </div>
@@ -858,16 +948,17 @@
                   <span>Recoil</span>
                 </div>
                 <div class="skill-wrap">
-                  <img src="./assets/images/axios.png" alt="axios" />
-                  <span>Axios</span>
-                </div>
-                <div class="skill-wrap">
                   <img
                     src="./assets/images/react-query.png"
                     alt="react-query"
                   />
                   <span>react-query</span>
                 </div>
+                <div class="skill-wrap">
+                  <img src="./assets/images/axios.png" alt="axios" />
+                  <span>Axios</span>
+                </div>
+             
 
                 <div class="skills-container">
                   <div class="skill-wrap">
@@ -931,7 +1022,7 @@
                   <span>Tailwind CSS</span>
                 </div>
                 <div class="skill-wrap">
-                  <img src="./assets/images/material-ui.png" alt="tailwind" />
+                  <img src="./assets/images/materialize.png" alt="tailwind" />
                   <span>Materialize</span>
                 </div>
                 <div class="skill-wrap">
@@ -1095,5 +1186,8 @@
       </main>
     </div>
   </body>
-  <script src="./script.js"></script>
+  <script src="./script.js">
+
+
+  </script>
 </html>
